@@ -1,5 +1,11 @@
 -- Mysql script for ALX project learning purposes
 
+-- CREATING THE alx_book_store database
+CREATE DATABASE IF NOT EXISTS alx_book_store;
+
+-- Selecting the alx_book_store database
+USE alx_book_store;
+
 -- Table: Books 
 CREATE TABLE Books(
 	book_id INT PRIMARY KEY,
