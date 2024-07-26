@@ -43,7 +43,9 @@ CREATE TABLE Order_Details(
 	orderdetail_id INT PRIMARY KEY,
 	order_id INT,
 	book_id INT,
-	quantity FLOAT
+	quantity FLOAT,
+	FOREIGN KEY (order_id) REFERENCES Orders(customer_id),
+	FOREIGN KEY (book_id) REFERENCES Books(book(_id)
 );
 
 
