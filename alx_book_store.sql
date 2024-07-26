@@ -19,7 +19,7 @@ CREATE TABLE Books(
 CREATE TABLE Authors(
 	author_id INT PRIMARY KEY,
 	author_name VARCHAR(215),
-	FOREIGN KEY (author_id) REFERENCES Books(author_id)
+	-- FOREIGN KEY (author_id) REFERENCES Books(author_id)
 );
 
 -- Table: Customers
@@ -35,6 +35,7 @@ CREATE TABLE Orders(
 	order_id INT PRIMARY KEY,
 	customer_id INT,
 	order_date DATE
+	FOREIGN KEY (customer_id) REFERENCES Customers(cusomer_id)
 );
 
 -- Table: Order_Details
