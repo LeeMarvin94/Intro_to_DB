@@ -7,7 +7,7 @@ from mysql.connector import errorcode
 def create_database(cursor, db_name):
     try:
         cursor.execute(
-            f"CREATE DATABASE IF NOT EXISTS {db_name} DEFAULT CHARACTER SET 'utf8'"
+            f"CREATE DATABASE IF NOT EXISTS alx_book_store"
         )
         print(f"Database '{db_name}' created successfully!")
     except mysql.connector.Error as err:
