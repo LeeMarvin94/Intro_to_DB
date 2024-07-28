@@ -1,5 +1,5 @@
-SELECT 
-    COLUMN_NAME AS 'Column Name', 
+SELECT
+    TABLE_NAME = "Books",
     COLUMN_TYPE AS 'Column Type', 
     IS_NULLABLE AS 'Is Nullable', 
     COLUMN_KEY AS 'Column Key', 
